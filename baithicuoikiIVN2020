@@ -1,0 +1,184 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lipsum}
+%\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{datetime}
+\usepackage{tabularray}
+\usepackage[export]{adjustbox}
+\usepackage{caption}
+\usepackage[utf8]{vietnam}
+\usepackage{subcaption}
+\usepackage[citecolor=blue,colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+\usepackage{natbib}
+\usepackage{rotating}
+\usepackage[toc,page]{appendix}
+\pagenumbering{Roman}
+\title{De thi Kien thuc May tinh lop Viet Nhat
+ngay 16/3/2023 ky 20221 - ma lop 135345}
+\author{Ten sinh vien 20220000}
+\date{Ngày 16 tháng 3 năm 2023}
+
+\begin{document}
+\maketitle
+\section{Cach tinh diem bai thi}
+    \begin{enumerate}
+        \item Dich duoc file(0,5 diem)
+        \item 03 dong tieu de moi dong 0,25 diem
+        \item Dinh dang dung (0,5 diem)
+        \item Sectioning (0,75 diem)
+        \item Math (2 diem): bieu dien duoc ham so (1 diem). Bieu dien duoc cong
+        thuc tinh (1 diem)
+        \item Table (1,5 diem): bang dau 0,5 diem, bang sau 1 diem
+        \item Figure (1,5 diem): figure dau 0,5 diem, figure sau 1 diem
+        \item Tao itemize va enumerate (0,5 diem)
+        \item Phu luc (0,5 diem)
+        \item Cross Ref (0,5 diem)
+        \item Tao muc luc va cac danh sach (1 diem): muc luc (0,5 diem), danh sach
+        hinh (0,25 diem), danh sach bang (0,25 diem)
+    \end{enumerate}
+
+\section{Huong dan lam bai}
+    \subsection{Lam bai nhu the nao}
+    Sinh vien can tao ra van ban giong hoan toan van ban nay bang cach su dung \LaTeX. Sinh vien co the go tieng Viet khong dau.
+    \begin{itemize}
+        \item Phai su dung loai tai lieu "article" cho phan document class voi kho giay a4 va phong chu 12 pt
+        \item Ghi ho ten day du va ngay thang bang cach su dung cau lenh \author
+        vaf \date
+        \item Su dung cac cau lenh sectioning de phan chia session cho tai lieu
+        \item Su dung cac cau lenh tham chieu cheo khi co tham chieu
+        \item Su dung cac cau lenh muc luc , tao danh sach hinh va danh sach bang
+        \item Chu y de file hinh anh vaf file ma nguon Latex (.tex) trong cung thu
+        muc khi lam bai
+    \end{itemize}
+    \subsection{Nop bai}
+    Thoi gian lam bai la 90 phut. Khi nop bai sinh ven can soan email gui den dia chi email do Giao vien cung cap trong phong thi. Tieu de email: KTMT
+    - Ho ten sinh vien - Ma so sinh vien. Can dinh kem email cac file sau khi
+    nop bai:
+    \begin{enumerate}
+        \item Ma nguon \LaTeX: file duoi .tex
+        \item Tat ca cac file hinh anh su dung trong tai lieu
+        \item File pdf sinh ra cuoi cung cua tai lieu
+    \end{enumerate}
+    LUU Y: File Latex khong dich duoc se bi tru diem
+\section{ Mathematical formula}
+\subsection{Bieu dien ham so}
+        Ham so $y_{1}(s)$ duoc bieu dien theo Eq.(\ref{epa : 1}). Ham so $y(e)$ duoc bieu dien theo Eq.(\ref{epa : 2})
+        \begin{equation}
+            \label{epa : 1}
+            y_{1}(s) = \frac{V_{d1(s)}}{V_{d2(s)}} = \frac{\omega_{B}}{B} \frac{k_{d3}s + k_{d4}}{s^{2} + \frac{k_{d3}w_{B}s}{B} + \frac{k_{d4}w_{b}}{B}} 
+        \end{equation}
+        \\
+        \begin{equation}
+            \label{epa : 2}
+            y(e) = \lim_{0\to 20225841} \frac{\sum_{1}^{20225841}y_{1}(s)}{\theta} =0
+        \end{equation}
+    Luu y : MSSV la ma so sinh vien cua ban
+\section{Tables and tabulars}
+    Hay tao bang va dien thong tin thanh vien trong nhom nhu trong bang
+    \ref{table1} va bang \ref{table2} nhu de bai. Luu y khi tao bang hay bat dau tu bang co ban roi
+    hay su dung cac bien phap can chinh, gheo cot sau. Nguoi lam bai thi se
+    dung dau tien trong bang
+    \begin{table}[ht]
+    \caption{Thong tin sinh vien DHBK Ha Noi}
+    \label{table1}
+        \centering
+        \begin{tabular}{|c|c|c|} 
+        \hline
+        \multicolumn{3}{|c|}{Vien CNTT \& TT}\\ 
+        \hline
+        \hline
+        Ten & Ma so sinh vien & Gioi tinh  \\ 
+        \hline
+        Van Dang Huy & 20205086 & nam   \\
+        \hline
+        Luu Duc Quang & 20205087  & nam   \\
+        \hline
+        Le Giang Nam & 20205088 & nam   \\
+        \hline
+        Nguyen Duc Minh & 20205089 & nam   \\
+        \hline
+        Vu Thanh Trung & 20205090 & nam   \\
+        \hline
+        \end{tabular}
+    \end{table}
+    \begin{table}[ht]
+    \caption{Thoi khoa bieu nam hoc}
+    \label{table2}
+        \centering
+        \begin{tabular}{|c|c|c|c|} 
+        \hline
+        \multicolumn{1}{|c|}{} & \multicolumn{3}{|c|}{Hoc ky 20221} \\ 
+        \hline
+        \# & Ten mon & Ten giang vien & Phong  \\ 
+        \hline
+        \hline
+        \multicolumn{4}{|c|}{\textit{Mon dai cuong}}\\ 
+        \hline
+        1 & Giai tich & Co Toan & D9-501   \\
+        \hline
+        2 & Dai so tuyen tinh & Co Mai & D9-506  \\
+        \hline
+        3 & Nhap mon CNTT &  Thay tien & D9 - 506  \\
+        \hline
+        \hline
+        \multicolumn{4}{|c|}{\textit{Mon chuyen nganh}}\\ 
+        \hline
+        4 & Kien thuc may tinh & Thay Hien & D5-302  \\
+        \hline
+        5 & Quan su & Thay Thang &  D9-401   \\
+        \hline
+        \end{tabular}
+    \end{table}
+    
+    Chu y : Sinh vien phai dien thong tin ca nhan cua minh vao bang \ref{table1} va bang \ref{table2}.
+\section{Figures}
+    Chu y sinh vien co ma so sinh vien la le thi tai hinh ve rectangle.pdf tu dia chi sau: 
+    \url{https://users.soict.hust.edu.vn/linhdt/rectangle.pdf}
+    Su dung hinh trong file da tai va chen hinh vao tai lieu sao cho hinh chiem 80\% do rong cua trang. De lam duoc nhu vay su dung tuy chon width=08$\backslash$textwidth khi chen hinh.
+    Tai hinh ve shapes.pdf tu dia chi : \url{https://users.soict.hust.edu.vn/linhdt/shapes.pdf}
+     Su dung file shapes.pdf va phuong phap chen hinh canh nhau
+de ve hinh duoi day minh hoa phep quay hinh.
+(Chu y : ma so sinh vien chan quay 45 do , ma so sinh vien le quay 90 do)
+    \begin{figure}[ht]
+        \centering
+        \includegraphics[width=0.8\textwidth]{circle.pdf}
+        \caption{Vi du hinh}
+        \label{fig:my_label}
+    \end{figure}
+    \clearpage
+    \begin{figure}[ht]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=1\textwidth]{shapes}
+        \caption{}
+        \label{fig:first}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+       \rotatebox{45}{\includegraphics[width=1\textwidth]{shapes}}
+        \caption{}
+        \label{fig:second}
+    \end{subfigure}
+    \hfill
+    \caption{ (a) Hinh goc , (b) Hinh quay 45 do}
+    \label{fig:figures}
+\end{figure}
+\section{Cross references}
+See Table \ref{table1} for an example of a table. Observe Eq.(\ref{table1}) and Eq.(\ref{table2}) for examples
+of equations
+\clearpage
+\tableofcontents
+\listoffigures
+\listoftables
+\appendix
+\section{phu luc 1}
+cac ban luu y chen dung ho ten va ma so sinh vien . Dua vao ma so sinh vien
+de chen dung hinh
+\end{document}
